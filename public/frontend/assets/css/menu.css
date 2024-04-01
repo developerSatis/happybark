@@ -1,0 +1,269 @@
+.sm, .sm ul, .sm li {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  direction: ltr;
+  text-align: left; }
+
+.sm {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  z-index: 9999; }
+  .sm ul {
+    display: none; }
+  .sm li {
+    position: relative; }
+  .sm > li > h1 {
+    margin: 0;
+    padding: 0; }
+  .sm > li > h2 {
+    margin: 0;
+    padding: 0; }
+  .sm > li > h3 {
+    margin: 0;
+    padding: 0; }
+  .sm > li > h4 {
+    margin: 0;
+    padding: 0; }
+  .sm > li > h5 {
+    margin: 0;
+    padding: 0; }
+  .sm > li > h6 {
+    margin: 0;
+    padding: 0; }
+  .sm a {
+    position: relative;
+    display: block; }
+    .sm a.disabled {
+      cursor: default; }
+  .sm * {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit; }
+  .sm *::before {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit; }
+  .sm *::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit; }
+
+.sm::after {
+  content: "";
+  display: block;
+  height: 0;
+  font: 0/0 serif;
+  clear: both;
+  overflow: hidden; }
+
+.pixelstrap a, .pixelstrap a:hover, .pixelstrap a:focus, .pixelstrap a:active {
+  padding: 10px 20px;
+  padding-right: 58px;
+  color: #333333;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+  text-decoration: none; }
+
+.pixelstrap a.disabled {
+  color: #ffd8d4; }
+
+.pixelstrap a .sub-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: auto;
+  right: 4px;
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  font: bold 16px/34px monospace !important;
+  text-align: center;
+  text-shadow: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px; }
+
+.pixelstrap a .sub-arrow::before {
+  content: '+'; }
+
+.pixelstrap a.highlighted .sub-arrow::before {
+  content: '-'; }
+
+.pixelstrap > li:last-child > a, .pixelstrap > li:last-child > *:not(ul) a, .pixelstrap > li:last-child > ul,
+.pixelstrap > li:last-child > ul > li:last-child > a, .pixelstrap > li:last-child > ul > li:last-child > *:not(ul) a, .pixelstrap > li:last-child > ul > li:last-child > ul,
+.pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > a, .pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, .pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > ul,
+.pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a, .pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, .pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul,
+.pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a, .pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, .pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul {
+  border-radius: 0 0 8px 8px; }
+
+.pixelstrap > li:last-child > a.highlighted, .pixelstrap > li:last-child > *:not(ul) a.highlighted,
+.pixelstrap > li:last-child > ul > li:last-child > a.highlighted, .pixelstrap > li:last-child > ul > li:last-child > *:not(ul) a.highlighted,
+.pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted, .pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a.highlighted,
+.pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted, .pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a.highlighted,
+.pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted, .pixelstrap > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a.highlighted {
+  border-radius: 0; }
+
+.pixelstrap ul {
+  background: #fff; }
+  .pixelstrap ul ul {
+    background: rgba(102, 102, 102, 0.1); }
+  .pixelstrap ul a, .pixelstrap ul a:hover, .pixelstrap ul a:focus, .pixelstrap ul a:active {
+    background: transparent;
+    color: #ff3522;
+    font-size: 16px;
+    text-shadow: none;
+    border-left: 8px solid transparent; }
+  .pixelstrap ul a.current {
+    background: #c33a32;
+    color: #fff; }
+  .pixelstrap ul a.disabled {
+    color: #b3b3b3; }
+  .pixelstrap ul ul a,
+  .pixelstrap ul ul a:hover,
+  .pixelstrap ul ul a:focus,
+  .pixelstrap ul ul a:active {
+    border-left: 16px solid transparent; }
+  .pixelstrap ul ul ul a,
+  .pixelstrap ul ul ul a:hover,
+  .pixelstrap ul ul ul a:focus,
+  .pixelstrap ul ul ul a:active {
+    border-left: 24px solid transparent; }
+  .pixelstrap ul ul ul ul a,
+  .pixelstrap ul ul ul ul a:hover,
+  .pixelstrap ul ul ul ul a:focus,
+  .pixelstrap ul ul ul ul a:active {
+    border-left: 32px solid transparent; }
+  .pixelstrap ul ul ul ul ul a,
+  .pixelstrap ul ul ul ul ul a:hover,
+  .pixelstrap ul ul ul ul ul a:focus,
+  .pixelstrap ul ul ul ul ul a:active {
+    border-left: 40px solid transparent; }
+  .pixelstrap ul li {
+    border-top: 1px solid rgba(0, 0, 0, 0.05); }
+    .pixelstrap ul li:first-child {
+      border-top: 0; }
+
+@media (min-width: 768px) {
+  /* Switch to desktop layout  */
+  .pixelstrap ul {
+    position: absolute;
+    width: 12em; }
+  .pixelstrap li {
+    float: left; }
+  .pixelstrap.sm-rtl li {
+    float: right; }
+  .pixelstrap ul li, .pixelstrap.sm-rtl ul li, .pixelstrap.sm-vertical li {
+    float: none; }
+  .pixelstrap a {
+    white-space: nowrap; }
+  .pixelstrap ul a, .pixelstrap.sm-vertical a {
+    white-space: normal; }
+  .pixelstrap .sm-nowrap > li > a, .pixelstrap .sm-nowrap > li > :not(ul) a {
+    white-space: nowrap; }
+  /* ...end */
+  .pixelstrap a .sub-arrow {
+    top: auto;
+    margin-top: 0;
+    bottom: 2px;
+    left: 50%;
+    margin-left: -5px;
+    right: auto;
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid dashed dashed dashed;
+    border-color: #ffd8d4 transparent transparent transparent;
+    background: transparent; }
+  .pixelstrap a .sub-arrow::before {
+    display: none; }
+  .pixelstrap ul {
+    border: 1px solid #a8a8a8;
+    padding: 7px 0;
+    background: #fff;
+    border-radius: 0 0 4px 4px !important;
+    -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2); }
+    .pixelstrap ul ul {
+      border-radius: 4px !important;
+      background: #fff; }
+    .pixelstrap ul a, .pixelstrap ul a:hover, .pixelstrap ul a:focus, .pixelstrap ul a:active, .pixelstrap ul a.highlighted {
+      border: 0 !important;
+      padding: 9px 23px;
+      background: transparent;
+      color: #ff3522;
+      border-radius: 0 !important; }
+    .pixelstrap ul a:hover, .pixelstrap ul a:focus, .pixelstrap ul a:active, .pixelstrap ul a.highlighted {
+      background: #ff4c3b;
+      color: #fff; }
+    .pixelstrap ul a.current {
+      background: #c33a32;
+      color: #fff; }
+    .pixelstrap ul a.disabled {
+      background: #fff;
+      color: #b3b3b3; }
+    .pixelstrap ul a .sub-arrow {
+      top: 50%;
+      margin-top: -5px;
+      bottom: auto;
+      left: auto;
+      margin-left: 0;
+      right: 10px;
+      border-style: dashed dashed dashed solid;
+      border-color: transparent transparent transparent #ffd8d4; }
+    .pixelstrap ul li {
+      border: 0; }
+  .pixelstrap .scroll-up,
+  .pixelstrap .scroll-down {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+    background: #fff;
+    height: 20px; }
+  .pixelstrap .scroll-up-arrow,
+  .pixelstrap .scroll-down-arrow {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 8px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #ff3522 transparent; }
+  .pixelstrap .scroll-down-arrow {
+    top: 6px;
+    border-style: solid dashed dashed dashed;
+    border-color: #ff3522 transparent transparent transparent; }
+  .pixelstrap.sm-rtl.sm-vertical a .sub-arrow {
+    right: auto;
+    left: 10px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #ffd8d4 transparent transparent; }
+  .pixelstrap.sm-rtl > li:first-child {
+    border-left: 1px solid #ff3522; }
+  .pixelstrap.sm-rtl > li:last-child {
+    border-left: 0; }
+  .pixelstrap.sm-rtl ul a .sub-arrow {
+    right: auto;
+    left: 10px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #ffd8d4 transparent transparent; }
+  .pixelstrap.sm-vertical {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); }
+    .pixelstrap.sm-vertical a {
+      padding: 9px 23px; }
+      .pixelstrap.sm-vertical a .sub-arrow {
+        top: 50%;
+        margin-top: -5px;
+        bottom: auto;
+        left: auto;
+        margin-left: 0;
+        right: 10px;
+        border-style: dashed dashed dashed solid;
+        border-color: transparent transparent transparent #ffd8d4; }
+    .pixelstrap.sm-vertical > li {
+      border-left: 0 !important; } }
